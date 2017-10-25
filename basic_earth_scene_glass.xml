@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<scene>
+	<Include A="glass_ref"></Include>
+	<sphere>
+		<ref x="1" y="1" z="1" w="0.25"></ref>
+		<pos x="0" y="0" z="0"></pos>
+		<rot x="0" y="-0.7" z="3.14"></rot>
+		<col R="0" V="0" B="255" T="255"></col>
+		<rad rad="10"></rad>
+		<refrac x="1"></refrac>
+		<texture type="amb" src="textures/terre.png"></texture>
+		<texture type="dif" src="textures/terre.png"></texture>
+		<texture type="normal" src="textures/terre_nm.png"></texture>
+	</sphere>
+	<plan>
+		<ref x="1" y="1" z="1" w="0.2"></ref>
+		<pos x="0" y="0" z="-10"></pos>
+		<rot x="0" y="0" z="0"></rot>
+		<norm x="0" y="0" z="1"></norm>
+		<col R="255" V="255" B="255" T="255"></col>
+		<texture type="amb" src="textures/wood.png"></texture>
+		<texture type="dif" src="textures/wood.png"></texture>
+		<texture type="normal" src="textures/wood_nm.png"></texture>
+		<texture type="size" x="10" y="10"></texture>
+	</plan>
+	<plan>
+		<ref x="1" y="1" z="1" w="1"></ref>
+		<pos x="50" y="0" z="0"></pos>
+		<rot x="0" y="0" z="0"></rot>
+		<norm x="-1" y="-0.7" z="-0.1"></norm>
+		<col R="255" V="255" B="255" T="255"></col>
+	</plan>
+	<plan>
+		<ref x="1" y="1" z="1" w="1"></ref>
+		<pos x="-60" y="0" z="0"></pos>
+		<rot x="0" y="0" z="0"></rot>
+		<norm x="1" y="0.65" z="0.1"></norm>
+		<col R="255" V="255" B="255" T="255"></col>
+	</plan>
+	<cone>
+		<ref x="1" y="1" z="1" w="0"></ref>
+		<pos x="0" y="10" z="0"></pos>
+		<rot x="0" y="0" z="0"></rot>
+		<norm x="0" y="0" z="1"></norm>
+		<angle angle="0.2"></angle>
+		<col R="64" V="64" B="64" T="255"></col>
+		<texture type="amb" src="textures/brick.png"></texture>
+		<texture type="dif" src="textures/brick.png"></texture>
+		<texture type="normal" src="textures/brick_nm2.png"></texture>
+		<texture type="size" x="10" y="10"></texture>
+	</cone>
+	<cylinder>
+		<ref x="1" y="1" z="1" w="0"></ref>
+		<pos x="0" y="0" z="0"></pos>
+		<rot x="-0.7853" y="0" z="0"></rot>
+		<norm x="0" y="0" z="1"></norm>
+		<rad rad="4"></rad>
+		<col R="0" V="255" B="255" T="64"></col>
+		<refrac x="1.3"></refrac>
+		<texture type="amb" src="textures/water.png"></texture>
+		<texture type="dif" src="textures/water.png"></texture>
+		<texture type="normal" src="textures/water_nm.png"></texture>
+		<texture type="size" x="10" y="10"></texture>
+	</cylinder>
+	<glass_ref>
+		<size x = "0.2"></size>
+		<pos x = "20" y = "20" ></pos>
+	</glass_ref>
+	<light>
+		<pos x="-8" y="-20" z="10"></pos>
+		<col R="255" V="255" B="255" T="255"></col>
+		<i amb="0.2" dif="1" spec="2"></i>
+	</light>
+	<light>
+		<pos x="-6" y="20" z="10"></pos>
+		<col R="255" V="255" B="255" T="255"></col>
+		<i amb="0.2" dif="1" spec="2"></i>
+	</light>
+	<light>
+		<pos x="-7" y="0" z="10"></pos>
+		<col R="255" V="255" B="255" T="255"></col>
+		<i amb="0.2" dif="1" spec="2"></i>
+	</light>
+	<cam>
+		<pos x="-50" y="0" z="10"></pos>
+		<dir x="1" y="0" z="0"></dir>
+		<rot x="0" y="0" z="0"></rot>
+		<fov fov_x="0.768" fov_y="0.432"></fov>
+		<dis dis="1"></dis>
+		<export PATH="cam1.png"></export>
+		<w W="1280"></w>
+		<h H="920"></h>
+	</cam>
+</scene>

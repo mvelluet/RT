@@ -1,0 +1,11 @@
+#!/bin/bash
+
+system=`uname -s`
+if [ $system = "Darwin" ] ; then
+echo "Makefile set for MacOS"
+cp .Makefiles/Makefile.Darwin Makefile
+fi
+if [ $system = "Linux" ] ; then
+echo "Makefile set for Linux"
+cp .Makefiles/Makefile.Linux Makefile
+fi
